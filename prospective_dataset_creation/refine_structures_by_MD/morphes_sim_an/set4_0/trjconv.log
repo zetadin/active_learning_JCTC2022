@@ -1,0 +1,186 @@
+           :-) GROMACS - gmx trjconv, 2021.1-dev-20210225-5fcf433 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, version 2021.1-dev-20210225-5fcf433
+Executable:   /usr/local/gromacs/2021/2021-impi2017-fftw337-gcc93-cuda11.1-fix3943/bin/gmx
+Data prefix:  /usr/local/gromacs/2021/2021-impi2017-fftw337-gcc93-cuda11.1-fix3943
+Working dir:  /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09/morphes_sim_an/set4_0
+Command line:
+  gmx trjconv -s em.tpr -pbc mol -center -f morph.gro -o morph_pbc.gro
+
+Will write gro: Coordinate file in Gromos-87 format
+Reading file em.tpr, VERSION 2021.1-dev-20210225-5fcf433 (single precision)
+Reading file em.tpr, VERSION 2021.1-dev-20210225-5fcf433 (single precision)
+Group     0 (         System) has  5559 elements
+Group     1 (        Protein) has  5496 elements
+Group     2 (      Protein-H) has  2777 elements
+Group     3 (        C-alpha) has   339 elements
+Group     4 (       Backbone) has  1017 elements
+Group     5 (      MainChain) has  1357 elements
+Group     6 (   MainChain+Cb) has  1686 elements
+Group     7 (    MainChain+H) has  1687 elements
+Group     8 (      SideChain) has  3809 elements
+Group     9 (    SideChain-H) has  1420 elements
+Group    10 (    Prot-Masses) has  5496 elements
+Group    11 (    non-Protein) has    63 elements
+Group    12 (            Ion) has     2 elements
+Group    13 (             MG) has     1 elements
+Group    14 (             ZN) has     1 elements
+Group    15 (            UNL) has    61 elements
+Group    16 (          Other) has    61 elements
+Group    17 (             MG) has     1 elements
+Group    18 (             ZN) has     1 elements
+Group    19 (            UNL) has    61 elements
+Select a group: Group     0 (         System) has  5559 elements
+Group     1 (        Protein) has  5496 elements
+Group     2 (      Protein-H) has  2777 elements
+Group     3 (        C-alpha) has   339 elements
+Group     4 (       Backbone) has  1017 elements
+Group     5 (      MainChain) has  1357 elements
+Group     6 (   MainChain+Cb) has  1686 elements
+Group     7 (    MainChain+H) has  1687 elements
+Group     8 (      SideChain) has  3809 elements
+Group     9 (    SideChain-H) has  1420 elements
+Group    10 (    Prot-Masses) has  5496 elements
+Group    11 (    non-Protein) has    63 elements
+Group    12 (            Ion) has     2 elements
+Group    13 (             MG) has     1 elements
+Group    14 (             ZN) has     1 elements
+Group    15 (            UNL) has    61 elements
+Group    16 (          Other) has    61 elements
+Group    17 (             MG) has     1 elements
+Group    18 (             ZN) has     1 elements
+Group    19 (            UNL) has    61 elements
+Select a group: Reading frames from gro file 'MOL', 5559 atoms.
+Reading frame       0 time    0.000   
+Precision of morph.gro is 0.001 (nm)
+ ->  frame      0 time    0.000      Last frame          0 time    0.000   
+
+
+GROMACS reminds you: "Computer dating is fine, if you are a computer." (Rita May Brown)
+
+Note that major changes are planned in future for trjconv, to improve usability and utility.
+Select group for centering
+Selected 15: 'UNL'
+Select group for output
+Selected 0: 'System'
+           :-) GROMACS - gmx trjconv, 2021.1-dev-20210225-5fcf433 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, version 2021.1-dev-20210225-5fcf433
+Executable:   /usr/local/gromacs/2021/2021-impi2017-fftw337-gcc93-cuda11.1-fix3943/bin/gmx
+Data prefix:  /usr/local/gromacs/2021/2021-impi2017-fftw337-gcc93-cuda11.1-fix3943
+Working dir:  /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09/morphes_sim_an/set4_0
+Command line:
+  gmx trjconv -s em.tpr -fit rot+trans -f morph_pbc.gro -o morph_fit.pdb -n index.ndx
+
+Will write pdb: Protein data bank file
+Reading file em.tpr, VERSION 2021.1-dev-20210225-5fcf433 (single precision)
+Reading file em.tpr, VERSION 2021.1-dev-20210225-5fcf433 (single precision)
+Group     0 (         System) has  5559 elements
+Group     1 (        Protein) has  5496 elements
+Group     2 (      Protein-H) has  2777 elements
+Group     3 (        C-alpha) has   339 elements
+Group     4 (       Backbone) has  1017 elements
+Group     5 (      MainChain) has  1357 elements
+Group     6 (   MainChain+Cb) has  1686 elements
+Group     7 (    MainChain+H) has  1687 elements
+Group     8 (      SideChain) has  3809 elements
+Group     9 (    SideChain-H) has  1420 elements
+Group    10 (    Prot-Masses) has  5496 elements
+Group    11 (    non-Protein) has    63 elements
+Group    12 (            Ion) has     2 elements
+Group    13 (          Other) has    61 elements
+Group    14 (             MG) has     1 elements
+Group    15 (             ZN) has     1 elements
+Group    16 (            UNL) has    61 elements
+Group    17 (         ligand) has    42 elements
+Select a group: Group     0 (         System) has  5559 elements
+Group     1 (        Protein) has  5496 elements
+Group     2 (      Protein-H) has  2777 elements
+Group     3 (        C-alpha) has   339 elements
+Group     4 (       Backbone) has  1017 elements
+Group     5 (      MainChain) has  1357 elements
+Group     6 (   MainChain+Cb) has  1686 elements
+Group     7 (    MainChain+H) has  1687 elements
+Group     8 (      SideChain) has  3809 elements
+Group     9 (    SideChain-H) has  1420 elements
+Group    10 (    Prot-Masses) has  5496 elements
+Group    11 (    non-Protein) has    63 elements
+Group    12 (            Ion) has     2 elements
+Group    13 (          Other) has    61 elements
+Group    14 (             MG) has     1 elements
+Group    15 (             ZN) has     1 elements
+Group    16 (            UNL) has    61 elements
+Group    17 (         ligand) has    42 elements
+Select a group: Reading frames from gro file 'MOL', 5559 atoms.
+Reading frame       0 time    0.000   
+Precision of morph_pbc.gro is 0.001 (nm)
+ ->  frame      0 time    0.000      Last frame          0 time    0.000   
+
+
+GROMACS reminds you: "Computer dating is fine, if you are a computer." (Rita May Brown)
+
+Note that major changes are planned in future for trjconv, to improve usability and utility.
+Select group for least squares fit
+Selected 4: 'Backbone'
+Select group for output
+Selected 17: 'ligand'

@@ -1,0 +1,74 @@
+
+define                   = -DFLEXIBLE -DPOSRES
+
+; RUN CONTROL PARAMETERS
+integrator               = sd
+; Start time and timestep in ps
+tinit                    = 0
+dt                       = 0.002
+nsteps                   = 1
+
+init_step                = 0
+; mode for center of mass motion removal
+comm-mode                = None
+; number of steps for center of mass motion removal
+;nstcomm                  = 100
+nstcalcenergy            = 1
+
+energygrps = no_core_lig Ion r_775 r_776 r_777 r_778 r_780 r_781 r_801 r_802 r_804 r_805 r_806 r_807 r_808 r_809 r_810 r_811 r_812 r_819 r_822 r_823 r_824 r_825 r_826 r_827 r_828 r_829 r_830 r_831 r_832 r_833 r_834 r_835 r_836 r_837 r_838 r_840 r_841 r_842 r_843 r_844 r_845 r_846 r_847 r_848 r_849 r_850 r_852 r_853 r_854 r_855 r_856 r_857 r_858 r_859 r_860 r_861 r_862 r_863 r_864 r_865 r_866
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff-scheme = verlet
+nstlist                  = 10
+ns-type                  = Grid
+pbc                      = xyz
+rlist                    = 1.2
+domain-decomposition     = no
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+; Method for doing electrostatics
+coulombtype              = PME
+rcoulomb-switch          = 0
+rcoulomb                 = 1.1
+epsilon-r                = 1
+vdw-type                 = switch
+rvdw-switch              = 1.0
+rvdw                     = 1.1
+DispCorr                 = EnerPres
+table-extension          = 1
+
+
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+; Temperature coupling  
+;tcoupl                   = v-rescale
+tcoupl                   = no
+; Groups to couple separately
+tc-grps                  = System
+; Time constant (ps) and reference temperature (K)
+;tau-t                    = 0.1
+tau-t                    = 2
+ref-t                    = 298
+; Pressure coupling     
+Pcoupl                   = no
+
+
+
+; OPTIONS FOR BONDS    
+constraints              = h-bonds
+constraint-algorithm     = Lincs
+continuation             = no
+lincs-order              = 8
+lincs-iter               = 3
+lincs-warnangle          = 30
+
+
+; Free energy control stuff
+free-energy              = no
+couple-moltype           =
+init-lambda              = 0        ; state A (ligand)
+delta-lambda             = 0        ; stay in state A (ligand)
+sc-alpha                 = 0.3
+sc-sigma                 = 0.25
+sc-power                 = 1
+sc-coul = yes

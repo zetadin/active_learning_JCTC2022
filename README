@@ -1,0 +1,4 @@
+This repository contains scripts and intermediate data used in making "Chemical Space Exploration with Active Learning and Alchemical Free Energies", doi: 10.1021/acs.jctc.2c00752
+
+Due to the proprietary nature of the retrospective dataset, we are unable to release the identities and the binding affinities of the ligands involved in that dataset at this time.
+Therefore, parts of the code that require those will not function correctly.

@@ -1,0 +1,73 @@
+
+define                   = -DFLEXIBLE -DPOSRES
+
+; RUN CONTROL PARAMETERS
+integrator               = sd
+; Start time and timestep in ps
+tinit                    = 0
+dt                       = 0.002
+nsteps                   = 1
+
+init_step                = 0
+; mode for center of mass motion removal
+comm-mode                = None
+; number of steps for center of mass motion removal
+;nstcomm                  = 100
+nstcalcenergy            = 1
+
+energygrps = no_core_lig Ion r_867 r_868 r_869 r_870 r_871 r_872 r_873 r_888 r_892 r_895
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff-scheme = verlet
+nstlist                  = 10
+ns-type                  = Grid
+pbc                      = xyz
+rlist                    = 5.2; 1.2
+domain-decomposition     = no
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+; Method for doing electrostatics
+coulombtype              = PME
+rcoulomb-switch          = 0
+rcoulomb                 = 5.1; 1.1
+epsilon-r                = 1
+vdw-type                 = switch
+rvdw-switch              = 5.0; 1.0
+rvdw                     = 5.1; 1.1
+DispCorr                 = EnerPres
+table-extension          = 1
+
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+; Temperature coupling  
+;tcoupl                   = v-rescale
+tcoupl                   = no
+; Groups to couple separately
+tc-grps                  = System
+; Time constant (ps) and reference temperature (K)
+;tau-t                    = 0.1
+tau-t                    = 2
+ref-t                    = 298
+; Pressure coupling     
+Pcoupl                   = no
+
+
+
+; OPTIONS FOR BONDS    
+constraints              = h-bonds
+constraint-algorithm     = Lincs
+continuation             = no
+lincs-order              = 8
+lincs-iter               = 3
+lincs-warnangle          = 30
+
+
+; Free energy control stuff
+free-energy              = no
+couple-moltype           =
+init-lambda              = 0        ; state A (ligand)
+delta-lambda             = 0        ; stay in state A (ligand)
+sc-alpha                 = 0.3
+sc-sigma                 = 0.25
+sc-power                 = 1
+sc-coul = yes

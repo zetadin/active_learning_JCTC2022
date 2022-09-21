@@ -1,0 +1,159 @@
+           :-) GROMACS - gmx grompp, 2021.1-dev-20210225-5fcf433 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.1-dev-20210225-5fcf433
+Executable:   /usr/local/gromacs/2021/2021-impi2017-fftw337-gcc93-cuda11.1-fix3943/bin/gmx
+Data prefix:  /usr/local/gromacs/2021/2021-impi2017-fftw337-gcc93-cuda11.1-fix3943
+Working dir:  /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09/morphes_sim_an/set4_0
+Command line:
+  gmx grompp -f /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09//data/mdp/em_for_sim_an.mdp -c combined.pdb -p topol.top -r combined.pdb -o em.tpr -maxwarn 4
+
+Ignoring obsolete mdp entry 'domain-decomposition'
+Ignoring obsolete mdp entry 'ns-type'
+
+WARNING 1 [file /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09//data/mdp/em_for_sim_an.mdp, line 77]:
+  You are using soft-core interactions while the Van der Waals interactions
+  are not decoupled (note that the sc-coul option is only active when using
+  lambda states). Although this will not lead to errors, you will need much
+  more sampling than without soft-core interactions. Consider using
+  sc-alpha=0.
+
+
+NOTE 1 [file /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09//data/mdp/em_for_sim_an.mdp]:
+  Replacing vdwtype=Switch by the equivalent combination of vdwtype=Cut-off
+  and vdw_modifier=Potential-switch
+
+
+NOTE 2 [file /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09//data/mdp/em_for_sim_an.mdp]:
+  You have set rlist larger than the interaction cut-off, but you also have
+  verlet-buffer-tolerance > 0. Will set rlist using verlet-buffer-tolerance.
+
+
+NOTE 3 [file /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09//data/mdp/em_for_sim_an.mdp]:
+  With PME there is a minor soft core effect present at the cut-off,
+  proportional to (LJsigma/rcoulomb)^6. This could have a minor effect on
+  energy conservation, but usually other effects dominate. With a common
+  sigma value of 0.34 nm the fraction of the particle-particle potential at
+  the cut-off at lambda=0.5 is around 2.2e-05, while ewald-rtol is 1.0e-05.
+
+Generating 1-4 interactions: fudge = 0.5
+
+WARNING 2 [file MOL_posre.itp, line 3]:
+  Some parameters for bonded interaction involving perturbed atoms are
+  specified explicitly in state A, but not B - copying A to B
+
+
+NOTE 4 [file topol.top, line 66]:
+  System has non-zero total charge: -2.000000
+  Total charge should normally be an integer. See
+  http://www.gromacs.org/Documentation/Floating_Point_Arithmetic
+  for discussion on how close it should be to an integer.
+  
+
+
+
+WARNING 3 [file topol.top, line 66]:
+  You are using Ewald electrostatics in a system with net charge. This can
+  lead to severe artifacts, such as ions moving into regions with low
+  dielectric, due to the uniform background charge. We suggest to
+  neutralize your system with counter ions, possibly in combination with a
+  physiological salt concentration.
+
+Setting the LD random seed to -41
+
+Generated 4186 of the 4186 non-bonded parameter combinations
+
+Generated 4186 of the 4186 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'protein'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'MG'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'ZN'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'MOL'
+
+turning H bonds into constraints...
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+J. S. Hub, B. L. de Groot, H. Grubmueller, G. Groenhof
+Quantifying Artifacts in Ewald Simulations of Inhomogeneous Systems with a Net
+Charge
+J. Chem. Theory Comput. 10 (2014) pp. 381-393
+-------- -------- --- Thank You --- -------- --------
+
+Number of degrees of freedom in T-Coupling group System is 13934.00
+
+NOTE 5 [file /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09//data/mdp/em_for_sim_an.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+
+NOTE 6 [file /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09//data/mdp/em_for_sim_an.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+NOTE 7 [file /home/ykhalak/Projects/ML_dG/pde2_dG/generators/structures/set_4/morphing_annealing_4d09//data/mdp/em_for_sim_an.mdp]:
+  For free energy simulations, the optimal load limit increases from 0.5 to
+  0.667
+
+
+
+There were 7 notes
+
+There were 3 warnings
+
+GROMACS reminds you: "I'm a Wishbone and I'm Breaking" (Pixies)
+
+Analysing residue names:
+There are:   339    Protein residues
+There are:     2        Ion residues
+There are:     1      Other residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 160x160x160, spacing 0.113 0.117 0.117
+
+Estimate for the relative computational load of the PME mesh part: 0.98
+
+This run will generate roughly 0 Mb of data

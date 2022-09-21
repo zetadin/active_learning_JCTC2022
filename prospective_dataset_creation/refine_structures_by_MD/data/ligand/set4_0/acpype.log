@@ -1,0 +1,29 @@
+========================================================================================
+| ACPYPE: AnteChamber PYthon Parser interfacE v. 2021-02-05T22:15:50CET (c) 2021 AWSdS |
+========================================================================================
+==> ... charge set to 0
+==> Executing Antechamber...
+==> * Antechamber OK *
+==> * Parmchk OK *
+==> Executing Tleap...
+++++++++++start_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Checking 'MOL'....
+Checking parameters for unit 'MOL'.
+Checking for bond parameters.
+Checking for angle parameters.
+Unit is OK.
+++++++++++end_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==> * Tleap OK *
+==> Removing temporary files...
+==> Writing NEW PDB file
+
+==> Writing CNS/XPLOR files
+
+==> Writing GROMACS files
+
+==> Writing GMX dihedrals for GMX 4.5 and higher.
+
+==> Writing CHARMM files
+
+==> Writing pickle file MOL.pkl
+Total time of execution: 4s

@@ -1,0 +1,76 @@
+
+define                   = -DFLEXIBLE -DPOSRES
+
+; RUN CONTROL PARAMETERS
+integrator               = steep
+nsteps                   = 10000
+emtol                    = 100
+emstep                   = 0.001
+
+init_step                = 0
+; mode for center of mass motion removal
+comm-mode                = None
+; number of steps for center of mass motion removal
+;nstcomm                  = 100
+nstcalcenergy            = 100
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff-scheme = verlet
+nstlist                  = 10
+ns-type                  = Grid
+pbc                      = xyz
+rlist                    = 1.2
+domain-decomposition     = no
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+; Method for doing electrostatics
+coulombtype              = PME
+rcoulomb-switch          = 0
+rcoulomb                 = 1.1
+epsilon-r                = 1
+vdw-type                 = switch
+rvdw-switch              = 1.0
+rvdw                     = 1.1
+DispCorr                 = EnerPres
+table-extension          = 1
+
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+; Temperature coupling  
+;tcoupl                   = v-rescale
+tcoupl                   = no
+; Groups to couple separately
+tc-grps                  = System
+; Time constant (ps) and reference temperature (K)
+;tau-t                    = 0.1
+tau-t                    = 2
+ref-t                    = 298
+; Pressure coupling     
+Pcoupl                   = no
+
+; Simulated annealing
+;annealing	= single                    ; single sequence of points for each T-coupling group
+;annealing_npoints	= 2                 ; two points - start and end temperatures
+;annealing_time 	= 0 10                  ; time frame of cooling - cool over period of 10 ps
+;annealing_temp	= 298 0                 ; start and end temperatures
+
+
+
+; OPTIONS FOR BONDS    
+constraints              = h-bonds
+constraint-algorithm     = Lincs
+continuation             = no
+lincs-order              = 8
+lincs-iter               = 3
+lincs-warnangle          = 30
+
+
+; Free energy control stuff
+free-energy              = yes
+couple-moltype           =
+init-lambda              = 1        ; state B (xray)
+delta-lambda             = 0        ; EM, so stay in state B (xray)
+sc-alpha                 = 0.3
+sc-sigma                 = 0.25
+sc-power                 = 1
+sc-coul = yes

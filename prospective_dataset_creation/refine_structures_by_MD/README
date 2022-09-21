@@ -1,0 +1,3 @@
+These scripts refine the binding pose using simulated anealing.
+Inside the morphes_sim_an folder, each ligaand would have a separate subfolder with the output,
+intermediate files, as well as interaction energies fro the MDenerg representations.

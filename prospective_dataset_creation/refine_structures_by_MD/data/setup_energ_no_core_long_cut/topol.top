@@ -1,0 +1,47 @@
+; Include forcefield parameters
+#include "amber99sb-ildn.ff/forcefield.itp"
+
+; Include ligand topology
+#include "MOL_GMX.itp"
+#include "prot.itp"
+
+; Include water topology
+#include "amber99sb-ildn.ff/tip3p.itp"
+
+; Include topology for ions
+;#include "amber99sb-ildn.ff/ions.itp"
+
+
+[ moleculetype ]
+; molname       nrexcl
+MG              1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+   1    MG                  1       MG             MG      1    2.00000
+   
+
+[ moleculetype ]
+; molname       nrexcl
+ZN              1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+   1    Zn                  1       ZN             ZN      1    2.00000
+  
+
+
+[ system ]
+; Name
+protein + MOL in vacuum without hybrid topology to xray
+
+
+[ system ]
+ MOL
+
+[ molecules ]
+; Compound        nmols
+ protein          1
+ MG               1
+ ZN               1
+ MOL              1     
